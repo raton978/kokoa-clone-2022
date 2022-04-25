@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Annie's Traveling Talk">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" sizes="16*16 32*32 64*64" href="https://avatars.githubusercontent.com/u/101405006?s=96&v=4" />
+    <title>Find Traveling Account or password</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <section class="boarding-pass login-sub">
+        <div class="boarding-pass__title">
+            <div class="boarding-pass__title-column">
+                <h2>Find Traveling Accound or Password</h2>
+            </div>
+            <div class="boarding-pass__title-column">
+                <img src="img/boarding-pass_logo.png" />
+            </div>
+        </div>
+        <div class="boarding-pass__up">
+            <div class="find__row">
+                <form action="index.html" method="get" id="find-id__form" class="regular-form">
+                    <span>( To find ID... )</span>
+                    <input name="travelplace" type="text" placeholder="Travel Place" required/>
+                    <input name="nickname" type="text" placeholder="Nickname" required/>
+                    <a href="index.html">
+                        <button type="button" id="find-id">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Find ID</span>
+                        </button>
+                    </a>
+                </form>
+            </div>
+            <div class="find__row">
+                <form action="index.html" method="get" id="find-password__form" class="regular-form">
+                    <span>( To find password... )</span>
+                    <input name="nickname" type="text" placeholder="Nickname" required/>
+                    <input name="username" type="text" placeholder="Email or Phone number" required/>
+                    <a href="index.html">
+                        <button type="button" id="fidnd-password">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Find Password</span>
+                        </button>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </section> 
+
+    <div class="no-mobile">
+        <img src="img/stewardess.png" />
+        <p class="big-screen">I'm sorry it's not available on a big screen.<br>
+             Please change your screen to smaller size.</p>
+        <p class="landscape-mode">Please change your screen to portrait mode!</p>
+    </div>
+    <script
+         src="https://kit.fontawesome.com/3791a51ddd.js" crossorigin="anonymous">
+    </script>
+</body>
+</html>

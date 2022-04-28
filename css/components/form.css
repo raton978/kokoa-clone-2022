@@ -1,0 +1,64 @@
+/*login, signup, find form */
+.regular-form {
+    margin: 60px 30px 25px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.regular-form input{
+    padding: 15px 0px;
+    border: none;
+    font-size: 18px;
+}
+
+.regular-form input:not([type="submit"]) {
+    border-bottom: var(--border-line);
+    transition: border-color 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.regular-form input::placeholder{
+    color: rgba(0,0,0,0.4);
+}
+
+.regular-form input:focus{
+    border-color: var(--light-blue);
+}
+
+/* login, signup button*/
+.regular-form input[type="submit"] {
+    background-color: var(--light-blue);
+    cursor: pointer;
+    padding: 13.5px 0px;
+    border-radius: 10px;
+    box-shadow: var(--button-shadow);
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+/* signup-form */
+#signup-form{
+    margin: 30px;
+    margin-bottom: 0px;
+}
+
+#signup-form input[type="submit"] {
+    background-image: none;
+    background-color: var(--mid-orange);
+    color: white;
+}
+
+/* find form */
+#find-id__form,
+#find-password__form {
+    margin: 30px;
+    margin-bottom: 0px;
+}
+#find-id__form span:first-child, 
+#find-password__form span:first-child {
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--gray);
+}

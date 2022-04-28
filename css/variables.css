@@ -1,0 +1,15 @@
+:root{
+    --light-green: #ddf2Ea;
+    --gray:#8d8d8d;
+    --light-blue:#48bad5;
+    --mid-orange:#f3a367;
+    --light-orange:#fdd695;
+    --light-gray:#f0f2f6;
+    --dark-orange:#c5805f;
+
+    --horizontal-space:25px;
+    --border-line:1px solid rgba(0,0,0,0.2);
+    --round-box:20px;
+    --button-shadow:1px 3px 7px 1px rgba(0,0,0,0.15);
+    --component-shadow: 0px 3px 7px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,55 @@
+.status-bar__settings {
+    background-color: #afd4e7;
+}
+.border-settings {
+    top: 95px;
+    z-index: 2;
+}
+.nav-settings {
+    background-color: var(--light-orange);
+}
+#settings-screen {
+    height: 110vh;
+}
+.main-screen__settings {
+    margin: 130px 0px;
+}
+
+.settings__setting {
+    padding: 20px 10px;
+    border-bottom: 1px solid #a9a7a71a;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: rgb(0,0,0,0.6);
+    transition: all 0.3s ease-in-out;
+}
+.settings__setting i {
+    margin-right: 20px;
+    font-size: 22px;
+}
+.settings__setting span {
+    font-weight: 600;
+}
+.settings__setting:nth-child(3),
+.settings__setting:last-child {
+    padding-bottom: 40px;
+    border-color: rgba(0,0,0,0.1);
+}
+.settings__setting:nth-child(3) span:last-child,
+.settings__setting:nth-child(9) span:last-child {
+    margin-left: auto;
+    font-size: 18px;
+    opacity: 0.6;
+    font-weight: 500;
+}
+.settings__setting:nth-child(4) {
+    padding-top: 40px;
+}
+.settings__setting:hover {
+    border: var(--boder-line);
+    box-shadow: var(--button-shadow);
+}
+.settings__setting:hover .notice-new {
+    animation: notificationNew 3s linear infinite;
+}

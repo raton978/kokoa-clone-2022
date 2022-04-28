@@ -1,0 +1,145 @@
+/* welcome-header*/
+.welcome-header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.welcome-header__title{
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.welcome-header__text{
+    width: 70%;
+    line-height: 20px;
+}
+
+/*boarding-pass img*/
+.boarding-pass {
+    margin: 50px 20px 5px 20px;
+}
+.boarding-pass__title {
+    background-color: var(--light-gray);
+    height: 70px;
+    border-top-left-radius: var(--round-box);
+    border-top-right-radius: var(--round-box);
+    display: flex;
+    justify-content: space-between;
+}
+.boarding-pass__title-column {
+    margin: 0px 30px;
+}
+.boarding-pass__title-column:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--gray);
+}
+.boarding-pass__title-column:first-child span:first-child{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.boarding-pass__title-column:first-child span:last-child {
+    font-size: 13px;
+}
+.boarding-pass__title-column img {
+    width: 120px;
+    height: 110px;
+}
+.boarding-pass__up {
+    background-color: white;
+    border-bottom-left-radius: var(--round-box);
+    border-bottom-right-radius: var(--round-box);
+    padding: 90px 0px 70px 0px;
+}
+.boarding-pass__bottom {
+    background-color: var(--light-gray);
+    border-top: 2px dashed var(--gray);
+    height: 90px;
+    border-radius: var(--round-box);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boarding-pass__bottom img {
+    width: 250px;
+    height: 200;
+}
+
+/* signup & find */
+.login-sub .boarding-pass__up{
+    padding: 30px 0px;
+}
+.login-sub h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+/* register & find */
+.register-find {
+    margin:0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sign-up,
+.find__row button {
+    background-color: var(--mid-orange);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius:10px;
+    font-size: 15px;
+    color:white;
+    font-weight: 700;
+    box-shadow: var(--button-shadow);
+}
+
+.register-find a {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--gray);
+    text-shadow: 1px 3px 3px rgba(0,0,0,0.15);
+}
+
+/* find account or password */
+.find__row button {
+    width: 100%; 
+    background-color: var(--light-blue);
+}
+.find__row i {
+    margin-right: 15px;
+}
+.find__row span {
+    transition: all 0.3s ease-in-out;
+}
+
+
+@keyframes rotateFindGlass {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: scale(1.5) rotateZ(180deg);
+   
+    }
+    100% {
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+.find__row button:hover i {
+    animation: rotateFindGlass 2.5s linear infinite;
+}
+
+.find__row button:hover span {
+    font-size: large;
+}

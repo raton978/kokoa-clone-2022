@@ -1,0 +1,105 @@
+.status-bar__friend {
+    background-color: var(--mid-orange);
+}
+
+#friends-display-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4f9f1;
+    padding: 13px 0px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--gray);
+    margin-top: -10px;
+    border-top: var(--border-line);
+    border-bottom: var(--border-line);
+}
+
+#friends-display-link i {
+    color: rgba(0,0,0,0.6);
+}
+#friends-display-link i:first-child {
+    margin-right: 10px;
+    font-size: 20px;
+}
+#friends-display-link i:last-child {
+    margin-left: 5px;
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+.friends-screen__channel {
+    margin-top: 25px;
+    border-top: var(--border-line);
+    padding-top: 15px;
+}
+
+.friends-screen__channel-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--gray);
+}
+
+/* for splash screen */
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#splash-screen {
+    background-color: var(--light-green);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    animation: hideSplashScreen 0.4s ease-in-out forwards;
+    animation-delay: 2s;
+}
+#splash-screen img {
+    width: 270px;
+    height: 270px;
+}
+
+@keyframes rotateAirplain {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+#splash-screen img:last-child {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    animation: rotateAirplain 15s linear infinite;
+}
+
+@keyframes rotateWorld {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(-360deg);
+    }
+}
+
+#splash-screen img:first-child {
+   animation: rotateWorld 20s linear infinite;
+}
